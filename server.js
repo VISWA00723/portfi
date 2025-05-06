@@ -1,4 +1,3 @@
-// server.js
 import express from 'express';
 import { MongoClient, ObjectId } from 'mongodb';
 import cors from 'cors';
@@ -11,7 +10,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 5000;
 // Using the MongoDB URI from .env file
 const MONGODB_URI = process.env.VITE_MONGODB_URI || 'mongodb://localhost:27018/like-us-tshirts';
 
